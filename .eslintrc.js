@@ -20,17 +20,6 @@ module.exports = {
     'vuejs-accessibility/click-events-have-key-events': 'off',
     semi: 'off',
   },
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)',
-      ],
-      env: {
-        jest: true,
-      },
-    },
-  ],
   plugins: [
     'vuejs-accessibility',
     'vue',
