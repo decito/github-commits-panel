@@ -1,3 +1,3 @@
 <template>
-  O Quadro vai ser renderizado aqui!
+  Board will be rendered here.
 </template>

@@ -17,3 +17,17 @@ import Board from './components/Board.vue'
 import List from './components/List.vue'
 import Sidebar from './components/Sidebar.vue'
 </script>
+
+<style>
+.ant-layout-sider {
+  color: #333;
+  line-height: 30px;
+  background: #ccc;
+}
+.ant-layout-content {
+  min-height: 120px;
+  color: #eee;
+  line-height: 30px;
+  background: rgba(16, 142, 233, 1);
+}
+</style>
