@@ -1,6 +1,7 @@
 <script setup>
 import * as gData from '../assets/json/trimmed-dataset.json'
 
+/*
 const listYears = () => {
   const dates = gData.map((d) => d.created_at)
 
@@ -17,8 +18,11 @@ const listYears = () => {
 
   return years
 }
+  *
+  */
 
-/* Notes to myself:
+/* Notes:
+ *
  * The function listYears() above
  * generates the years based only
  * on the years present in json.
@@ -32,6 +36,8 @@ const listYears = () => {
  * If I choose to follow using them, I should
  * turn them into one and use spread array
  * to make it more performatic.
+ *
+ */
 
 let minYear = 0
 let maxYear = 0
@@ -53,6 +59,8 @@ const getYearRange = () => {
 }
 
 const listYearRange = () => {
+  getYearRange()
+
   const range = Math.abs(maxYear - minYear)
   const min = maxYear - range
   const years = []
@@ -63,13 +71,21 @@ const listYearRange = () => {
 
   return years
 }
-*/
 </script>
 
 <template>
   <ul>
-    <li v-for="year in listYears()" :key="year">
+    <li v-for="year in listYearRange()" :key="year">
       <a href="#">{{ year }}</a>
     </li>
   </ul>
 </template>
+
+<style>
+li {
+  list-style: none;
+}
+a {
+  color: #fff;
+}
+</style>

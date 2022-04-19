@@ -1,14 +1,12 @@
 <template>
   <a-layout>
-    <a-layout>
-      <a-layout-content>
-        <Board />
-        <List />
-      </a-layout-content>
-      <a-layout-sider>
-        <Sidebar />
-      </a-layout-sider>
-    </a-layout>
+    <a-layout-content>
+      <Board />
+      <List />
+    </a-layout-content>
+    <a-layout-sider>
+      <Sidebar />
+    </a-layout-sider>
   </a-layout>
 </template>
 
@@ -22,12 +20,12 @@ import Sidebar from './components/Sidebar.vue'
 .ant-layout-sider {
   color: #333;
   line-height: 30px;
-  background: #ccc;
+  background: #666;
 }
 .ant-layout-content {
   min-height: 120px;
   color: #eee;
   line-height: 30px;
-  background: rgba(16, 142, 233, 1);
+  background: #333;
 }
 </style>
